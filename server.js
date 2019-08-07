@@ -1,7 +1,11 @@
 let task=[{
     todo:'work',
-    struke:true
+    strike:true
 }]
+
+function paint(){
+    
+}
 
 window.onload=function(){
     console.log('kk')
@@ -12,6 +16,6 @@ window.onload=function(){
             todo:input.value,
             strike:false
         })
-        console.log(task)
+        paint()
     })
 }

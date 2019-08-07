@@ -1,9 +1,6 @@
-window.onload=function()
-{
-    const input=document.getElementById('input')
-    const button=document.getElementById('button')
-    console.log(button)
-    button.addEventListener('click',()=>{
-        console.log('clicked')
-    })
+const button=document.getElementById('button')
+const input=document.getElementById('input')
+console.log(button)
+button.onclick=function(){
+    console.log('kk');
 }

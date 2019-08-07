@@ -1,10 +1,29 @@
+
 let task=[{
     todo:'work',
     strike:true
 }]
 
+function main(){
+    console.log(task.length)
+    let html=''
+    for(let i=0;i<task.length ;i++)
+    {
+        if(task[i].strike)
+        {
+            html+=`<li class="strike">${task[i].todo}</li>`
+        }
+        else{
+            html+=`<li>${task[i].todo}</li>`
+        }
+    }
+    return html
+}
+
 function paint(){
-    
+    const ol=document.getElementById('ol')
+    ol.innerHTML=main(task)
+    input.value=''
 }
 
 window.onload=function(){
@@ -16,6 +35,7 @@ window.onload=function(){
             todo:input.value,
             strike:false
         })
+        console.log(task)
         paint()
     })
 }

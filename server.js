@@ -1,6 +1,6 @@
 let task=[{
     todo:"work",
-    strike:false
+    strike:true
 }]
 
 window.onload=function(){
